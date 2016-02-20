@@ -1,0 +1,89 @@
+@charset "utf-8";
+
+
+body{
+	margin-left: 0;
+	padding: 1rem;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.flex-container{
+	border: 3px solid #bababa;
+	/*flex 박스로 설정*/
+	
+	display: flex;
+
+	
+	/*display:inline-flex
+      div는 블럭 요소이므로, width를 전체로 가짐 
+
+	*/
+	/*flex의 방향을 설정 // row가 기본 값이며, 세로로 하려면 column
+	strech가 기본이라서, 아래로 세우면 div가 커짐 
+	*/
+	flex-direction: row;
+
+	/*
+	nowrap이 기본 값이며, 박스 크기 밖으로 나가게 됨 
+	wrap은 아래로 떨어지게 됨
+	*/
+
+	/*more 정보는 md 참고*/
+	/*flexbox 방향/감쌈 속기형 속성*/
+	flex-wrap:wrap;
+
+	/*주축을 기준으로 왼쪽, 오른쪽, 중간에 정렬하고 싶으면 flex-start를 조절
+	flex-start, center, flex-end
+	space-betweeen --> 맨 앞, 맨 뒤에 배치 시킨 후 사이를 채움 
+	*/
+	/*justify-content: space-around;*/
+	
+
+	/*flex start 시, 스트레치 않함 */
+	align-items: flex-start;
+
+	/*vertical center
+	또 다시 flex를 만들어서 정렬한다.
+	*/
+
+}
+
+.flex-item{
+	padding: 1rem;
+	/*width에 대한 기준이 없는데, 나머지 공간을 나눠 가지도록 설정 */
+	/*flex-grow: 1;*/
+
+	/*flex-shrink 값은 기본값이 1이므로, width에 맞추어 줄어듬*/
+	flex-shrink: 1;
+	/*flex 속기형 
+	flex: grow shrink basis;
+	*/
+
+	text-align: center;
+}
+/*order값의 순서대로 정렬 -1번 0번 1번 2번 플렉스 박스 순으로 정렬*/
+
+.flex-item:nth-child(1){
+	height: 200px;
+	background:#FF4E19; order:1;
+}
+
+.flex-item:nth-child(2){
+	height: 300px;
+	background:#8E6AFF;}
+	
+.flex-item:nth-child(3){background:#FF0AAA;}
+.flex-item:nth-child(4){background:#FDFF9E;}
+.flex-item:nth-child(5){background:#2AFFF8;}
+.flex-item:nth-child(6){background:#5F4AFF;}
+.flex-item:nth-child(7){background:#AF1AFF;}
+.flex-item:nth-child(8){background:#9CFF46; order:-1;}
+
+
+.flex-item em{
+	font-style: normal;
+	font-size: 1.2rem;
+}
