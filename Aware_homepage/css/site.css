@@ -1,0 +1,16 @@
+@charset "utf-8";
+@import "grid.css";
+@import "reset.css";
+@import "common.css";
+
+/*페이지 디자인*/
+
+.page{
+	height:100vh;
+}
+
+body{
+	background: #bababa;
+}
+
+

@@ -1,0 +1,209 @@
+/*그리드 시스템 설계
+페이지 폭은 960px
+컬럼 개수는 8개
+컬럼 폭은 120px
+*/
+
+/*
+그리드 컨테이너 설계
+*/
+
+.container{
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+img{
+	margin:0px;
+}
+
+/*clearfix 하는 방법*/
+.container::after{
+	content: '';
+	display: block;
+	clear: both;
+}
+/*기본이 repeat라 여러개 반복되어 보여짐*/
+.container.grid{
+	background: url(../images/grid_module.png);
+}
+
+.row:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.header > div{
+	height: 80px;
+	background: #FFF;
+}
+
+.header-logo{
+	position: relative;
+}
+
+.header-icon{
+	position: relative;
+}
+
+.header-category{
+	font: 2.0rem;
+}
+
+.header-category ul{
+
+}
+
+.header-category ul li{
+	font: 1.5rem/1.2 Helvetica;
+	float: left;
+	margin-top: 30px;
+	margin-right: 36px;
+}
+
+.header-category ul li span{
+	background-image: url(../images/header/icon-arrow-down.png);
+	display: inline-block;
+	width: 6px;
+	height: 4px;
+	margin-left: 1px;
+}
+
+.header img{
+	position: absolute;
+}
+
+.header img[src$="svg-icon-hamberger.png"]{
+	left: 29px;
+	top:  33px;
+}
+
+.header img[src$="svg-logo-aware.png"]{
+	left: 80px;
+	top:  29px;
+}
+
+.header img[src$="svg-icon-bag.png"]{
+	left: 83px;
+	top:  32px;
+}
+
+.header img[src$="svg-icon-face.png"]{
+	left: 140px;
+	top:  32px;
+}
+
+.header img[src$="svg-icon-search.png"]{
+	left: 193px;
+	top:  32px;
+}
+
+.hover >img{
+	vertical-align: bottom;
+}
+
+/*컨텐츠 구성*/
+.header img[src$="photo-slider-content-bg.png"]{
+	left: 193px;
+	top:  32px;
+}
+
+
+
+
+.slider > div {
+	height: 480px;
+}
+
+.banner > div {
+	height: 240px
+}
+
+.feature > div{
+	height:240px;
+}
+
+.blog > div{
+	height: 240px;
+}
+
+.information > div{
+	height: 480px;
+}
+
+.brand > div{
+	height: 120px; 
+}
+
+.categories > div{
+	height: 60px;
+}
+
+.footer > div{
+	height: 120px;
+}
+
+.slider-image{
+	height: 120px;
+	border: 1px solid black;
+}
+
+[class*="col-"]{
+	float:left;
+	background: #66CCFF;
+
+}
+
+/*emmet 전체 선택 clt+ shift, alt 누르면 똑같은 속성에 맞는 선까지 진행 */
+
+.col-1	{width: 120px;}
+.col-2	{width: 240px;}
+.col-3	{width: 360px;}
+.col-4	{width: 480px;}
+.col-5	{width: 600px;}
+.col-6	{width: 720px;}
+.col-7	{width: 840px;}
+.col-8	{width: 960px;}
+
+/*push, pull */
+.push-1 {margin-left: 120px;}
+.push-2 {margin-left: 240px;}
+.push-3 {margin-left: 360px;}
+.push-4 {margin-left: 480px;}
+.push-5 {margin-left: 600px;}
+.push-6 {margin-left: 720px;}
+.push-7 {margin-left: 840px;}
+.push-8 {margin-left: 960px;}
+
+/*command + d 똑같은 단어들만 선택 가능 */
+.pull-1 {margin-left: -120px;}
+.pull-2 {margin-left: -240px;}
+.pull-3 {margin-left: -360px;}
+.pull-4 {margin-left: -480px;}
+.pull-5 {margin-left: -600px;}
+.pull-6 {margin-left: -720px;}
+.pull-7 {margin-left: -840px;}
+.pull-8 {margin-left: -960px;}
+
+/*prefix*/
+.prefix-1 { padding-left: 120px; }
+.prefix-2 { padding-left: 240px; }
+.prefix-3 { padding-left: 360px; }
+.prefix-4 { padding-left: 480px; }
+.prefix-5 { padding-left: 600px; }
+.prefix-6 { padding-left: 720px; }
+.prefix-7 { padding-left: 840px; }
+.prefix-8 { padding-left: 960px; }
+
+
+/*sufix*/
+.suffix-1 { padding-right: 120px; }
+.suffix-2 { padding-right: 240px; }
+.suffix-3 { padding-right: 360px; }
+.suffix-4 { padding-right: 480px; }
+.suffix-5 { padding-right: 600px; }
+.suffix-6 { padding-right: 720px; }
+.suffix-7 { padding-right: 840px; }
+.suffix-8 { padding-right: 960px; }
