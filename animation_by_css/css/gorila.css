@@ -1,0 +1,58 @@
+.background{
+	width: 800px;
+	height: 320px;
+	background-image: url(../images/bg.png);
+}
+
+.s_n_logo_{
+  background-image: url("s&n-logo 복사.png");
+  position: absolute;
+  left: 18px;
+  top: 18px;
+  width: 88px;
+  height: 86px;
+  z-index: 6;
+}
+
+.kingkong_{
+  background-image: url("kingkong 복사.png");
+  position: absolute;
+  left: 491px;
+  top: 28px;
+  width: 298px;
+  height: 411px;
+  z-index: 5;
+}
+
+.golliras {
+  background-image: url("golliras.png");
+  position: absolute;
+  left: 11px;
+  top: 110px;
+  width: 497px;
+  height: 186px;
+  z-index: 3;
+}
+
+.apes {
+  background-image: url("apes.png");
+  position: absolute;
+  left: 4px;
+  top: 169px;
+  width: 796px;
+  height: 58px;
+  z-index: 2;
+}
+
+.Fabulously_Flexible_Website_Design {
+  background-image: url("Fabulously Flexible Website Design.png");
+  position: absolute;
+  left: 119px;
+  top: 31px;
+  width: 290px;
+  height: 72px;
+  z-index: 9;
+}
+
+
+

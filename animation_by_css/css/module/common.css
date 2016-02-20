@@ -1,0 +1,53 @@
+html{
+	overflow-y:scroll;
+}
+
+body{
+	margin: 0;
+	/*font: 87,5%/1,5 Helvetica, Verdana, Arial, Sans-serif;*/
+	/*1.5는 line height 순서대로 적용하면서 감*/
+	font: 87.5%/1,5 "Nanum Gothic", Gothic;
+}
+
+/*전 객체에 박스 사이징*/
+*, *::before, *::after{   
+	box-sizing: border-box;
+}
+
+
+/* clearfix 모듈을 만들어 가는 과정 
+.parent::after{
+	content: "여기요";
+	display: block;
+	clear:both;
+	height:0;
+	visibility: hidden;
+}
+*/
+	
+.clearfix::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/*Opera 지원을 위해 사용함 */
+.micro-cf::before,
+.micro-cf::after{
+	display: table;
+	content:'';
+}
+.micro-cf::after{
+	clear:both;
+}
+
+
+/*화면을 중간에 놓는 모듈*/
+/*position absolute로 놓는 방법은 height,width를 2로 나누면서 계속해서 값을 바꿔줘야 하므로, 유지 보수가 힘들다. */
+.center-position{
+	position: absolute;
+	top:      50%;
+	left:     50%;
+	/*나를 기준으로 했을 때, 나의 높이와 길이의 50%만큼 이동*/
+	transform: translate(-50%, -50%);
+}

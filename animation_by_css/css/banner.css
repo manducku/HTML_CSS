@@ -1,0 +1,67 @@
+@import module/common.css;
+
+body{
+	margin: 0;
+}
+
+.banner{
+	position: relative;
+
+	/*애니매이션으로 인해 hidden 해둠 */
+	overflow: hidden; 
+	width: 800px;
+	height: 320px;	
+}
+
+.banner img:not([src$="bg.png"]){
+	position: absolute;
+}
+
+
+/*START 애니메이션 시작 부분 */
+.banner img[src$="apes.png"]{
+	top: 169px;
+	left: 100%;
+}
+
+.banner img[src$="text.png"]{
+	top: 31px;
+	left: 119px;
+}
+
+.banner img[src$="golliras.png"]{
+	top: 110px;
+	left: 1px;
+}
+
+.banner img[src$="kingkong.png"]{
+	top:;
+	top: 28px;
+	left: 482px;
+}
+
+.banner img[src$="logo.png"]{
+	top: 18px;
+	left: 18px;
+}
+
+/*END 애니메이션 끝나는 부분*/
+
+.banner:hover img[src$="apes.png"]{
+	top: 169px;
+	left: 4px;
+	transition: left 0.45s cubic-bezier(0.13, 0.79, 0.74, 0.94);
+}
+
+.banner:hover img[src$="golliras.png"]{
+	top: 110px;
+	left: 11px;
+	transition: left 0.45s cubic-bezier(0.13, 0.79, 0.74, 0.94);
+}
+
+.banner:hover img[src$="kingkong.png"]{
+	top: 28px;
+	left: 492px;
+	transition: left 0.45s cubic-bezier(0.13, 0.79, 0.74, 0.94);
+}
+

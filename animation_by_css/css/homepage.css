@@ -1,0 +1,56 @@
+@import "module/common.css";
+
+
+.section{
+	width: 100vw;
+}
+
+.header{
+	top: 0;
+	width: 100%;
+	height: 100vh;
+	background-image: url(../images/active.jpeg);
+	background-size: cover;
+	position: fixed;
+	z-index: -1;
+
+}
+
+.main{
+	width: 90vw;
+	margin-left: 10vw;
+	margin-right: 10vw;
+	margin: 100vh auto;
+	background: #fff;
+	/*이유?? 확인*/
+	padding: 5em 10vw 2em 10vw;
+}
+
+.title{
+	color: #666666;
+	font: 100 36px/2.0 Geogia;
+}
+
+/*
+body {
+	margin: 0;
+}
+
+.parent {
+	position:   fixed;
+	top: 0;
+	left: 50%;
+	z-index: -1;
+	transform: translateX(-50%);
+	width:      100%;
+	height: 100vh;
+	margin:     80px auto;
+	background: url(../images/photo-woman.jpeg) center center;
+	background-size: cover;
+}
+
+.parent-title {
+	color: #fff;
+	font: 100 24px/1 Geogia;
+}
+*/

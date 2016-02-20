@@ -1,0 +1,128 @@
+@charset "UTF-8";
+@import "module/common.css";
+
+
+/*CSS 레이아웃 FLoat*/
+/*아래의 소스는 모바일을 first로 작성된 CSS*/
+.print_name{
+	position: relative;
+}
+
+.print_name::before{
+	display:    block;
+	position:   absolute;
+	top:        50%;
+	left:       50%;
+	content:    attr(data-name);
+	color:      #fff;
+	font-size:  2.4em;
+	text-align: center;
+	transform:  translate(-50%, -50%);
+	/*가운데 정렬을 위한 코드*/
+}
+
+header{
+	height:     100px;
+	background: #54AEC3;
+}
+
+nav{
+	height:     60px;
+	background: #367A8B;
+}
+
+main{
+	height: 60vh;  
+	/*vh 뜻 확인 - 실제로 보이는 화면 크기 
+	퍼센트를 주려면 html에 100%를 줘야 함  */
+	background: #536CB0;
+}
+
+aside{
+	height:     60vh;
+	background: #908d9f;
+}
+
+footer{
+	clear:      left; /*float의 영향권에 있으므로, clear를 해주어야 함*/
+	height:     80px;
+	background: #151417;
+	background: ;
+}
+
+.post{
+	padding-top: 1em;
+	height: 20vh;
+}
+
+.post:nth-child(1){
+	background: #86DDFF;
+}
+
+.post:nth-child(2){
+	background: #737AFF;
+}
+
+.post:nth-child(3){
+	background: #78FFD7;
+}
+
+.post-title{
+	margin-top: 0;
+	margin-bottom: 0;
+	color: white;
+	font-size:16px;
+	font-weight: normal;
+	text-align: center;
+}
+
+/*모바일 화면일 때, 3번째 화면을 숨김*/
+.mobile-hidden{  
+	display: none;
+}
+
+/*
+반응형     구현
+CSS3    Media queries
+@media로 구현 
+*/
+
+/*media가 screen일 때, */
+@media only screen and (min-width: 860px){
+		main{
+			float: left;
+			width: 50%;
+		}
+		aside{
+			float: left;
+			width: 50%;
+		}
+		.mobile-hidden{
+			display: block;
+		}
+
+}
+
+@media only screen and (min-width: 1100px){
+		main{
+			float: right;
+			width: 80%;
+		}
+		aside{
+			width: 20%;
+		}
+
+		.post{
+		float:      left;
+		box-sizing: border-box; 
+		margin:     0px;
+		width:      33.33%;
+		height:     inherit; 
+		/*inherit 를 통해서 height 상속 */
+		}
+
+		.mobile-hidden{
+			display: block;
+		}
+}
+
