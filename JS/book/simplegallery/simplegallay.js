@@ -39,5 +39,16 @@ $(document).ready(function(){
 	});
 
 
+	$(".reset").click(function(){
+
+		var $images = $("#container img");
+		var length = $images.length;
+
+		for(i = 0; i < length; i++){
+			$images.eq(i).css({left:0, top: 0});
+		}
+
+	});
+
 
 });
