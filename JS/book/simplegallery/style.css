@@ -1,0 +1,61 @@
+body{
+	margin: 0;
+}
+
+.nav{
+	margin-top: 20px;
+	margin-left: 20px;
+	height: 50px;
+
+}
+
+.counter{
+	margin-top: 20px;
+	height: 50px;
+}
+
+.button{
+	margin: 5px;
+	text-decoration: none;
+}
+
+a:hover{
+	color: black;
+}
+
+a:link{
+	color: #6699FF;
+}
+
+a:visited{
+	color: #9933CC;
+}
+
+
+.count{
+	padding: 5px;
+}
+
+img{
+	position: absolute;
+}
+
+.image-container{
+	position:relative;
+	border 1px solid #000;
+	height: 600px;
+	margin-left: 30px;
+}
+
+.image-container img{
+	position: absolute;
+	left:0;
+	right: 0;
+	width:120px;
+}
+
+.count{
+	padding: 10px;
+}
+
+
