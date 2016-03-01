@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
+	<title>노드 찾기 테스트</title>
+</head>
+<body>
+	<div id="samplePage" class="page">
+		샘플 페이지(div, id=samplepage, class=page)
+			<div id="header">
+				헤더 영역(div, id="header")
+			</div>
+
+			<div id="content" class="sample-content">
+				노드 찾기(div, id=content, class=sample-content)
+			
+			 <ul class="menu">
+			 	일반 노드 찾기 (ul, class=menu)
+			 	<li>id로 찾기(li)</li>
+			 	<li class="select">tag로 찾기(li, class=select)</li>
+			 	<li>class로 찾기(li)</li>
+			 	<li class="test1">속성으로 찾기(li, class=test1)
+				<span class="select">SPAN TAG</span>
+
+			 	</li>
+			 </ul>
+
+			 <div class="content-data">
+			 	자식 노드 찾기
+			 	<p class="test1">1. 모든 자식 노드 찾기(p, class=test1)</p>
+			 	<p>2. 특정 자식 노드만 찾기(p)</p>
+			 	<p class="test2">3. 마지막 자식 노드 찾기 (p, class=test2)</p>
+			 </div>
+		</div>
+
+		<div id ="footer">
+			footer 영역(div, id="footer")
+		</div>
+	</div>
+</body>
+
+<script src="jquery-2.2.1.min.js" type="text/javascript"></script>
+<script src="node_search.js" type="text/javascript"></script>
+</html>
