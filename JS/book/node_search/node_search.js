@@ -38,6 +38,9 @@ $(document).ready(function(){
 		var border = index*5;
 		$(this).css("border",border+"px solid black");
 	});
+
+	//자식 노드 찾기 테스트 
+	$("#samplePage").contents().css("border","5px solid black");
 	
 });
 
