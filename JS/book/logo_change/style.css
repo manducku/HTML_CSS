@@ -1,0 +1,38 @@
+.tab-menu{
+	list-style: none;
+	margin-top: 20px;
+	padding: 0px;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+ul{
+	text-align: center;
+}
+
+li{
+	display: inline-block;
+	text-align: left;
+	width:150px;
+	height: 150px;
+	transition: transform 0.5s ease;
+}
+
+.tab-menu li i{
+  top: 50%;
+  left: 50%;
+  position: relative;
+  transform: translate(-50%, -50%);
+
+}
+
+.tab-menu li:hover{
+	transform: scale(1.5,1.5);
+}
+
+.tab-menu li.select{
+	transform: scale(1.5,1.5);	
+}
+
