@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+	<meta charset="UTF-8">
+	<title>list editor</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="style.css">
+	<script type="text/javascript" src="jquery-2.2.1.min.js"></script>
+	<!-- 합쳐지고 최소화된 최신 CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+	<!-- 부가적인 테마 -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+	<!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+	<div class= "menu-bar">	
+		<input class="form-control" type="text" id="menuName" placeholder="write here!" autofocus />
+		<div class="btn-group">
+		<a href=# class = "fa fa-plus fa-2x btn btn-primary" id = "add"></a>
+		<a href=# class = "fa fa-retweet fa-2x btn btn-success" id = "update"></a>
+		<a href=# class = "fa fa-minus fa-2x btn btn-info" id = "delete"> </a>
+		<a href=# class = "fa fa-arrow-up fa-2x btn btn-warning" id = "up"> </a>
+		<a href=# class = "fa fa-arrow-down fa-2x btn btn-danger" id = "down"></a>
+		</div>
+	</div>
+	
+	<div>
+		<ul class="content">
+			<li class = "what">what?</li>
+			<li>menu 1</li>
+			<li>menu 2</li>
+			<li>menu 3</li>
+			<li>menu 4</li>
+			<li>menu 5</li>
+			<li>menu 6</li>
+		</ul>
+	</div>
+	
+	<script src="list_editor.js"></script>
+</body>
+
+</html>
