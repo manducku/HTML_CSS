@@ -43,6 +43,15 @@ function init_Event(){
 	$('#menuName').on('keyup', function(e) {
     if (e.keyCode === 13) {
         addMenu();
+    	}
+	});
+
+	$("body").on('keydown', function(e) {
+    if(e.keyCode ==38){
+    	menuUp();
+    }
+    if(e.keyCode == 40){
+    	menuDown();
     }
 	});
 
