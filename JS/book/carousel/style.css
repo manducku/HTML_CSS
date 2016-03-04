@@ -1,0 +1,66 @@
+@charset "utf-8";
+/* CSS 모듈 호출 */
+ @import "../reset.css";
+ @import "../common.css";
+
+
+.header{
+	height: 10vh;
+	width: 100vw;
+}
+
+.pannel{
+	margin-top: 10px;
+	width: 100vw;
+	height: 80vh;
+	margin: 0 auto;
+}	
+
+#bg{
+	width: inherit;
+	height:inherit;
+}
+
+.bg1{
+	background-image: url(images/1.jpeg);
+	background-size: 100%;
+}
+
+.bg2{
+	background-image: url(images/2.jpeg);
+	background-size: 100%;	
+}
+
+
+.bg3{
+	background-image: url(images/3.jpeg);
+	background-size: 100%;	
+}
+
+
+.bg4{
+	background-image: url(images/4.jpeg);
+	background-size: 100%;	
+}
+
+
+.bg5{
+	background-image: url(images/5.jpeg);
+	background-size: 100%;	
+}
+
+
+
+.navigation{
+	margin-top: 10px;
+	text-align: center;
+}
+
+.navigation a {
+  text-decoration: none;
+  background: #333;
+  border-radius: 5px;
+  color: white;
+  padding: 5px 10px;
+  margin: 5px;
+}
